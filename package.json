@@ -1,0 +1,33 @@
+{
+  "name": "scopeflow-cli",
+  "version": "1.0.0",
+  "description": "ScopeFlow CLI - A tool for managing project scope and strategy",
+  "type": "module",
+  "bin": {
+    "scopeflow": "./dist/bin/scopeflow.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.10.1",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.12",
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
